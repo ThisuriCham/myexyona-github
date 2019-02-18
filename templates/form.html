@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='m1.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='top.css') }}">
+    <title>EXYÓNÁ - Explore Your Name</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static',filename='Capture1.PNG') }}" />
+    <!-- <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/dc/3.0.4/dc.css"> -->
+    <!-- <style>
+        *{font-size: 30px}
+    </style> -->
+</head>
+
+<body bgcolor=darkgoldenrod>
+    <center>
+        <table border="0">
+            <tr>
+                <td>
+                    <ul>
+                        <li><img src="{{ url_for('static',filename='Capture1.PNG') }}" alt="logo" width="100" height="98" /></li>
+                    </ul>
+                </td>
+
+                <td>
+                    <ul>
+                <td>
+                    <ul>
+                        <li><a href="{{ url_for('static',filename='about.html') }}">About me</a></li>
+                    </ul>
+                </td>
+
+                <td>
+                    <ul>
+
+                        <li><a href="#feedback">Give Feedback</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <!-- {% for message in form.email.errors %}
+    <div class="flash">{{ message }}</div>
+    {% endfor %} -->
+    <div class="col-container">
+        <div class="col typewriter" style="background:black; color:blanchedalmond">
+            <p class="typewriter" style="font-size:6vw;font-family: Comic Sans MS"><b> Hello!<br>I'm EXYÓNÁ </b></p>
+        </div>
+
+
+
+
+        <!-- <div class="col" style="background:black; color:blanchedalmond"><img src="Capture1.PNG" alt="logo" width="150" height="150"/></div> -->
+    </div>
+    <p style="font-size:3vw;font-family: Comic Sans MS"><b>Do you know about your name?</b></p>
+    <p class="glow" style="font-size:3vw;font-family: Comic Sans MS"><b>Soon, give me a chance to EXplore YOur NAme</b></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="{{ url_for('static',filename='m1.js') }}"></script>
+    <!-- <p style="font-size:56px;"><img src="Capture1.PNG" alt="logo" width="150" height="150"/><b>EXYÓNÁ - Explore Your Name</b></p> -->
+    <p style="font-size:2.5vw;font-family: Verdana"><b><br> {Please follow below instructions before entering your
+            name.} </b></p>
+    <p style="font-size:2.5vw;font-family: Verdana"> 1. Enter only one name. </p>
+    <p style="font-size:2.5vw;font-family: Verdana"> 2. If your name is consisted (in pronounciation) with long sounds
+        (e.g.:- Á É Í Ó Ú ) replace them as follows. (Don't use these letters "Á É Í Ó Ú") </p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp á -> aa or á -> ae (this is different according to
+        pronounciation)</p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp é -> ei</p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp í -> ee </p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp ó -> oe </p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp ú -> uu </p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp For clarification, look at these examples, </p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp කාංච<font style="color:seashell">න</font> &nbsp&nbsp:
+        Kaanchan<font style="color:seashell">a</font>&nbsp කාංච<font style="color:seashell">නා</font> &nbsp : Kaanchan<font
+            style="color:seashell">aa</font>
+    </p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp පැ<font style="color:seashell">හැ</font>සරා : Pah<font
+            style="color:seashell">a</font>saraa &nbsp පැ<font style="color:seashell">හෑ</font>සරා &nbsp: Pah<font
+            style="color:seashell">ae</font>saraa </p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp ග<font style="color:seashell">යෙ</font>ෂා &nbsp&nbsp:
+        Gay<font style="color:seashell">e</font>shaa &nbsp ග<font style="color:seashell">යේ</font>ෂා
+        &nbsp&nbsp&nbsp&nbsp: Gay<font style="color:seashell">ei</font>shaa </p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp පුව<font style="color:seashell">නි</font>
+        &nbsp&nbsp&nbsp&nbsp&nbsp: Puwan<font style="color:seashell">i</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp පුව<font
+            style="color:seashell">නී</font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : Puwan<font style="color:seashell">ee</font>
+    </p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp <font style="color:seashell">ඔ</font>ෂදි
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <font style="color:seashell">O</font>shadi&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font
+            style="color:seashell">ඕ</font>ෂදි &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <font style="color:seashell">Oe</font>shadi</p>
+    <p style="font-size:2.5vw;font-family: Verdana"> &nbsp &nbsp ක<font style="color:seashell">සු</font>මි
+        &nbsp&nbsp&nbsp&nbsp&nbsp: Kas<font style="color:seashell">u</font>mi &nbsp&nbsp&nbsp&nbsp ක<font style="color:seashell">සූ</font>මි
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: Kas<font style="color:seashell">uu</font>mi </p>
+
+
+
+
+    <form action="/get_gender" method="POST">
+        <p style="font-size:3vw ;font-family:Kristen ITC"><b>Enter your name</b></p>
+        <p><input style="font-size:3vw;font-family: Verdana; max-width: 50%;" type='text' name='nm' />&nbsp &nbsp
+            <input style="font-size:2.554vw;font-family: Verdana;" type='submit' value='Predict Gender of your Name' /></p>
+    </form>
+
+    <form action="/get_gana" method="POST">
+        <p><input style="font-size:3vw;font-family: Verdana" type='text' name='nm' />&nbsp &nbsp
+            <input style="font-size:2.7vw;font-family: Verdana" type='submit' value='Predict Effect of your Name' /></p><br><br>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12.crossfilter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/3.0.3/dc.min.js"></script>
+    <br>
+    <center>
+        <div id="feedback">
+            <h1 style="font-size: 3vw">Hi!</h1>
+            <h2 class="glow1" style="font-size: 3vw">Give me a feedback</h2>
+           
+
+            {% for message in get_flashed_messages() %}
+            <div class="flash">{{ message }}</div>
+            {% endfor %}
+
+            <form action="/" method=post>
+                {{ form.hidden_tag() }}
+
+                {{ form.name.label }}
+                {{ form.name }}
+
+                {{ form.email.label }}
+                {{ form.email }}
+
+                {{ form.message.label }}
+                {{ form.message }}
+
+                {{ form.submit }}
+            </form>
+        </div>
+    </center>
+    <br>
+    <footer>
+        <div class="col" style="background:black; color:blanchedalmond; font-size:1.7vw; font-family: Verdana">
+            <p style="font-size:.5vw">
+                <center> This is submitted in partial fulfilment for the Bachelor of Science in Computer Science Degree offered by the
+                    Department of Computer Science, Faculty of Applied Sciences, University of Sri Jayewardenepura. </center>
+            </p><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <script src="{{ url_for('static',filename='top.js') }}"></script>
+            <p style="font-size:.5vw">
+                <center> Copyright &copy 2018: All rights reserved.</center>
+            </p>
+            <!-- <div class="col" style="background:black; color:blanchedalmond"><p style="font-size:56px;font-family: Comic Sans MS"><b> Hello!<br>I'm EXYÓNÁ </b></p></div>  -->
+        </div>
+    </footer>
+
+</body>
+
+</html>
